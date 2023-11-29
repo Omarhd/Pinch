@@ -14,6 +14,10 @@
 		1699BA552B1659BC007DC331 /* PinchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BA542B1659BC007DC331 /* PinchTests.swift */; };
 		1699BA5F2B1659BC007DC331 /* PinchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BA5E2B1659BC007DC331 /* PinchUITests.swift */; };
 		1699BA612B1659BC007DC331 /* PinchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BA602B1659BC007DC331 /* PinchUITestsLaunchTests.swift */; };
+		1699BA722B166FAE007DC331 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BA712B166FAE007DC331 /* InfoPanelView.swift */; };
+		1699BA742B169966007DC331 /* ControllImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BA732B169966007DC331 /* ControllImageView.swift */; };
+		1699BA772B16A88D007DC331 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BA762B16A88D007DC331 /* PageModel.swift */; };
+		1699BA792B16A8F4007DC331 /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699BA782B16A8F4007DC331 /* PageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		1699BA5A2B1659BC007DC331 /* PinchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1699BA5E2B1659BC007DC331 /* PinchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchUITests.swift; sourceTree = "<group>"; };
 		1699BA602B1659BC007DC331 /* PinchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1699BA712B166FAE007DC331 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		1699BA732B169966007DC331 /* ControllImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllImageView.swift; sourceTree = "<group>"; };
+		1699BA762B16A88D007DC331 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		1699BA782B16A8F4007DC331 /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
+		1699BA7A2B16AD3D007DC331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,12 @@
 		1699BA422B1659B9007DC331 /* Pinch */ = {
 			isa = PBXGroup;
 			children = (
-				1699BA432B1659B9007DC331 /* PinchApp.swift */,
-				1699BA452B1659B9007DC331 /* ContentView.swift */,
+				1699BA7A2B16AD3D007DC331 /* Info.plist */,
+				1699BA752B16A879007DC331 /* Model */,
+				1699BA702B165B24007DC331 /* Data */,
+				1699BA6F2B165B1A007DC331 /* Views */,
+				1699BA6E2B165B11007DC331 /* App */,
+				1699BA6D2B165B08007DC331 /* Screens */,
 				1699BA472B1659BB007DC331 /* Assets.xcassets */,
 				1699BA492B1659BB007DC331 /* Preview Content */,
 			);
@@ -125,6 +138,47 @@
 				1699BA602B1659BC007DC331 /* PinchUITestsLaunchTests.swift */,
 			);
 			path = PinchUITests;
+			sourceTree = "<group>";
+		};
+		1699BA6D2B165B08007DC331 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1699BA452B1659B9007DC331 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1699BA6E2B165B11007DC331 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1699BA432B1659B9007DC331 /* PinchApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1699BA6F2B165B1A007DC331 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1699BA712B166FAE007DC331 /* InfoPanelView.swift */,
+				1699BA732B169966007DC331 /* ControllImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1699BA702B165B24007DC331 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1699BA782B16A8F4007DC331 /* PageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1699BA752B16A879007DC331 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1699BA762B16A88D007DC331 /* PageModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +312,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1699BA462B1659B9007DC331 /* ContentView.swift in Sources */,
+				1699BA772B16A88D007DC331 /* PageModel.swift in Sources */,
+				1699BA742B169966007DC331 /* ControllImageView.swift in Sources */,
 				1699BA442B1659B9007DC331 /* PinchApp.swift in Sources */,
+				1699BA792B16A8F4007DC331 /* PageData.swift in Sources */,
+				1699BA722B166FAE007DC331 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +483,11 @@
 				DEVELOPMENT_TEAM = 2C4XF58Z9A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pinch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +512,11 @@
 				DEVELOPMENT_TEAM = 2C4XF58Z9A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pinch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
